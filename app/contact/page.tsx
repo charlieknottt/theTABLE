@@ -29,13 +29,12 @@ export default function Contact() {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-warm-50 to-primary-50 py-12 px-4">
-        <div className="max-w-2xl w-full bg-white rounded-lg shadow-xl p-8 md:p-12 text-center">
-          <div className="text-6xl mb-6">✉️</div>
+      <div className="min-h-screen flex items-center justify-center bg-warm-100 py-12 px-4">
+        <div className="max-w-2xl w-full bg-white border border-warm-300 shadow-sm p-8 md:p-12 text-center">
           <h2 className="text-3xl font-serif font-bold text-warm-900 mb-4">
             Message Received!
           </h2>
-          <p className="text-lg text-warm-700 mb-6">
+          <p className="text-lg text-warm-800 mb-6">
             Thank you for reaching out. We'll get back to you as soon as possible.
           </p>
           <button
@@ -52,15 +51,14 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-warm-800 to-warm-900 text-white py-20 md:py-32">
+      <section className="relative bg-gradient-to-br from-warm-900 to-primary-900 text-white py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
               Get in Touch
             </h1>
             <p className="text-xl md:text-2xl text-warm-100 max-w-3xl mx-auto leading-relaxed">
-              We'd love to hear from you. Whether you have questions, feedback,
-              or want to learn more about The Table, reach out below.
+              We'd love to hear from you. Whether you have questions, feedback, or want to learn more about The Table, reach out below.
             </p>
           </div>
         </div>
@@ -117,7 +115,7 @@ export default function Contact() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-primary-50 to-warm-50 p-6 rounded-lg">
+              <div className="bg-warm-100 p-6 border border-warm-300">
                 <h3 className="text-lg font-semibold text-warm-900 mb-3">
                   Stay Connected
                 </h3>
@@ -131,7 +129,7 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
+              <div className="bg-white border border-warm-300 shadow-sm p-8 md:p-12">
                 <h2 className="text-3xl font-serif font-bold text-warm-900 mb-2">
                   Send Us a Message
                 </h2>
@@ -244,7 +242,7 @@ export default function Contact() {
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-warm-50 p-6 rounded-lg">
+            <div className="bg-warm-100 p-6 border border-warm-300">
               <h3 className="text-xl font-semibold text-warm-900 mb-3">
                 Do I need to be an expert to host a Table?
               </h3>
@@ -256,7 +254,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="bg-warm-50 p-6 rounded-lg">
+            <div className="bg-warm-100 p-6 border border-warm-300">
               <h3 className="text-xl font-semibold text-warm-900 mb-3">
                 How much does it cost to host a Table?
               </h3>
@@ -267,7 +265,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="bg-warm-50 p-6 rounded-lg">
+            <div className="bg-warm-100 p-6 border border-warm-300">
               <h3 className="text-xl font-semibold text-warm-900 mb-3">
                 Can my church host multiple Tables?
               </h3>
@@ -278,7 +276,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="bg-warm-50 p-6 rounded-lg">
+            <div className="bg-warm-100 p-6 border border-warm-300">
               <h3 className="text-xl font-semibold text-warm-900 mb-3">
                 What if my Table doesn't go well?
               </h3>

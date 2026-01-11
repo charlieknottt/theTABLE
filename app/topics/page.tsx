@@ -298,15 +298,14 @@ export default function Topics() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-warm-800 to-warm-900 text-white py-16 md:py-24">
+      <section className="relative bg-gradient-to-br from-warm-900 to-primary-900 text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
               Discussion Topics
             </h1>
             <p className="text-xl md:text-2xl text-warm-100 max-w-3xl mx-auto leading-relaxed">
-              Ten critical issues facing our nation—thoughtfully examined through
-              a Christian lens with curated resources for deeper engagement.
+              Ten critical issues facing our nation, thoughtfully examined through a Christian lens with curated resources for deeper engagement.
             </p>
           </div>
         </div>
@@ -334,43 +333,40 @@ export default function Topics() {
       </section>
 
       {/* Topic Content */}
-      <section className="py-16 md:py-24 bg-warm-50">
+      <section className="py-16 md:py-24 bg-warm-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
+          <div className="bg-white border border-warm-300 shadow-sm p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-warm-900 mb-3">
               {selectedTopic.title}
             </h2>
-            <p className="text-xl text-primary-600 italic mb-8">
+            <p className="text-xl text-warm-700 italic mb-8">
               {selectedTopic.subtitle}
             </p>
 
             <div className="space-y-8">
               {/* Background */}
               <div>
-                <h3 className="text-2xl font-serif font-semibold text-primary-700 mb-4 flex items-center">
-                  <span className="mr-3 text-3xl">📚</span>
+                <h3 className="text-2xl font-serif font-semibold text-warm-900 mb-4">
                   Background
                 </h3>
-                <p className="text-lg text-warm-700 leading-relaxed">
+                <p className="text-lg text-warm-800 leading-relaxed">
                   {selectedTopic.background}
                 </p>
               </div>
 
               {/* Why Now */}
-              <div className="bg-primary-50 p-6 rounded-lg">
-                <h3 className="text-2xl font-serif font-semibold text-primary-700 mb-4 flex items-center">
-                  <span className="mr-3 text-3xl">⏰</span>
+              <div className="bg-warm-100 p-6 border border-warm-300">
+                <h3 className="text-2xl font-serif font-semibold text-warm-900 mb-4">
                   Why This Matters Now
                 </h3>
-                <p className="text-lg text-warm-700 leading-relaxed">
+                <p className="text-lg text-warm-800 leading-relaxed">
                   {selectedTopic.whyNow}
                 </p>
               </div>
 
               {/* Resources */}
               <div>
-                <h3 className="text-2xl font-serif font-semibold text-primary-700 mb-6 flex items-center">
-                  <span className="mr-3 text-3xl">🔗</span>
+                <h3 className="text-2xl font-serif font-semibold text-warm-900 mb-6">
                   Recommended Resources
                 </h3>
                 <div className="space-y-4">
@@ -380,15 +376,12 @@ export default function Topics() {
                       href={resource.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block bg-warm-50 hover:bg-warm-100 p-5 rounded-lg border-l-4 border-primary-500 transition-colors group"
+                      className="block bg-warm-50 hover:bg-warm-100 p-5 border border-warm-300 transition-colors group"
                     >
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
                           <div className="flex items-center mb-2">
-                            <span className="text-2xl mr-3">
-                              {resource.type === 'video' ? '🎥' : '📄'}
-                            </span>
-                            <span className="text-xs uppercase tracking-wide font-semibold text-primary-600">
+                            <span className="text-xs uppercase tracking-wide font-semibold text-warm-700 mr-3">
                               {resource.type}
                             </span>
                           </div>
@@ -451,18 +444,17 @@ export default function Topics() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-warm-800 to-warm-900 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-warm-900 to-primary-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
             Ready to Host a Discussion?
           </h2>
           <p className="text-xl mb-8 text-warm-100 leading-relaxed">
-            These topics are designed to spark meaningful conversation around your table.
-            Sign up to host and receive full discussion guides and resources.
+            These topics are designed to spark meaningful conversation around your table. Sign up to host and receive full discussion guides and resources.
           </p>
           <Link
             href="/get-involved"
-            className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-700 transition-colors shadow-lg"
+            className="inline-block bg-primary-600 text-white px-8 py-4 rounded font-semibold text-lg hover:bg-primary-700 transition-colors border border-primary-500"
           >
             Become a Host
           </Link>

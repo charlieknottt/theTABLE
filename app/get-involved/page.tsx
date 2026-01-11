@@ -42,20 +42,16 @@ export default function GetInvolved() {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-warm-50 to-primary-50 py-12 px-4">
-        <div className="max-w-2xl w-full bg-white rounded-lg shadow-xl p-8 md:p-12 text-center">
-          <div className="text-6xl mb-6">🎉</div>
+      <div className="min-h-screen flex items-center justify-center bg-warm-100 py-12 px-4">
+        <div className="max-w-2xl w-full bg-white border border-warm-300 shadow-sm p-8 md:p-12 text-center">
           <h2 className="text-3xl font-serif font-bold text-warm-900 mb-4">
             Thank You for Your Interest!
           </h2>
-          <p className="text-lg text-warm-700 mb-6">
-            We're excited that you want to host a Table discussion! We'll be in touch soon
-            with next steps, training information, and resources to help you host a
-            meaningful gathering.
+          <p className="text-lg text-warm-800 mb-6">
+            We're excited that you want to host a Table discussion! We'll be in touch soon with next steps, training information, and resources to help you host a meaningful gathering.
           </p>
-          <p className="text-warm-600 italic">
-            In the meantime, consider which topic you'd like to start with and who you might
-            invite to your first Table.
+          <p className="text-warm-700 italic">
+            In the meantime, consider which topic you'd like to start with and who you might invite to your first Table.
           </p>
           <button
             onClick={() => setSubmitted(false)}
@@ -71,15 +67,14 @@ export default function GetInvolved() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20 md:py-32">
+      <section className="relative bg-gradient-to-br from-warm-900 to-primary-900 text-white py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
               Become a Host
             </h1>
-            <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
-              Join ordinary Christians hosting guests for intentional dinners
-              that lead to extraordinary impact.
+            <p className="text-xl md:text-2xl text-warm-100 max-w-3xl mx-auto leading-relaxed">
+              Join ordinary Christians hosting guests for intentional dinners that lead to extraordinary impact.
             </p>
           </div>
         </div>
@@ -93,74 +88,66 @@ export default function GetInvolved() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-warm-50 p-8 rounded-lg">
-              <div className="text-primary-600 text-4xl mb-4">🏠</div>
+            <div className="bg-warm-100 p-8 border border-warm-300 shadow-sm">
               <h3 className="text-xl font-semibold text-warm-900 mb-3">
                 Open Your Home
               </h3>
-              <p className="text-warm-700">
-                Invite 6-12 people to your home for a dinner. It can be simple or elaborate—
-                what matters is the hospitality, not the impressiveness.
+              <p className="text-warm-800">
+                Invite 6-12 people to your home for a dinner. It can be simple or elaborate. What matters is the hospitality, not the impressiveness.
               </p>
             </div>
 
-            <div className="bg-warm-50 p-8 rounded-lg">
-              <div className="text-primary-600 text-4xl mb-4">📖</div>
+            <div className="bg-warm-100 p-8 border border-warm-300 shadow-sm">
               <h3 className="text-xl font-semibold text-warm-900 mb-3">
                 Choose a Topic
               </h3>
-              <p className="text-warm-700">
-                Select one of our curated topics. We provide background research, Scripture
-                references, and discussion questions to guide the conversation.
+              <p className="text-warm-800">
+                Select one of our curated topics. We provide background research, Scripture references, and discussion questions to guide the conversation.
               </p>
             </div>
 
-            <div className="bg-warm-50 p-8 rounded-lg">
-              <div className="text-primary-600 text-4xl mb-4">🤝</div>
+            <div className="bg-warm-100 p-8 border border-warm-300 shadow-sm">
               <h3 className="text-xl font-semibold text-warm-900 mb-3">
                 Facilitate Discussion
               </h3>
-              <p className="text-warm-700">
-                Guide a 90-minute conversation using our host guide. You're not expected
-                to be an expert—just a thoughtful facilitator.
+              <p className="text-warm-800">
+                Guide a 90-minute conversation using our host guide. You're not expected to be an expert, just a thoughtful facilitator.
               </p>
             </div>
 
-            <div className="bg-warm-50 p-8 rounded-lg">
-              <div className="text-primary-600 text-4xl mb-4">📸</div>
+            <div className="bg-warm-100 p-8 border border-warm-300 shadow-sm">
               <h3 className="text-xl font-semibold text-warm-900 mb-3">
                 Share Insights
               </h3>
-              <p className="text-warm-700">
-                After your Table, share key takeaways (anonymously if desired) to inspire
-                and encourage the broader community.
+              <p className="text-warm-800">
+                After your Table, share key takeaways (anonymously if desired) to inspire and encourage the broader community.
               </p>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-primary-50 to-warm-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-serif font-semibold text-primary-700 mb-4">
+          <div className="bg-warm-100 p-8 border border-warm-300">
+            <h3 className="text-2xl font-serif font-semibold text-warm-900 mb-4">
               We'll Equip You With:
             </h3>
-            <ul className="space-y-3 text-warm-700">
+            <ul className="space-y-3 text-warm-800">
               <li className="flex items-start">
-                <span className="text-primary-600 mr-3 text-xl">✓</span>
+                <span className="mr-3">•</span>
                 <span>Training on how to host effective discussions</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary-600 mr-3 text-xl">✓</span>
+                <span className="mr-3">•</span>
                 <span>Invitation templates and guidance on building your guest list</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary-600 mr-3 text-xl">✓</span>
+                <span className="mr-3">•</span>
                 <span>Comprehensive topic packets with research and Scripture</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary-600 mr-3 text-xl">✓</span>
+                <span className="mr-3">•</span>
                 <span>Host guides with conversation questions and timing suggestions</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary-600 mr-3 text-xl">✓</span>
+                <span className="mr-3">•</span>
                 <span>Ongoing support and connection with other hosts</span>
               </li>
             </ul>
@@ -356,15 +343,13 @@ export default function GetInvolved() {
       </section>
 
       {/* Vision */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-warm-800 to-warm-900 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-warm-900 to-primary-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
             From Your Table to the Nation
           </h2>
           <p className="text-xl text-warm-100 leading-relaxed">
-            Wilberforce started with a handful of friends around a dinner table.
-            That small beginning changed the world. Your Table could be part of
-            the next great movement of faith-driven change.
+            Wilberforce started with a handful of friends around a dinner table. That small beginning changed the world. Your Table could be part of the next great movement of faith-driven change.
           </p>
         </div>
       </section>
