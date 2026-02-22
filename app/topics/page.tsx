@@ -247,6 +247,12 @@ const topics: Topic[] = [
         url: 'https://religionnews.com/2026/01/30/evangelicals-say-they-care-about-immigrants-they-also-distrust-them-immigration-table-erlc-sbc-cities-church/',
         source: 'Religion News Service',
       },
+      {
+        title: 'How Americans View the Border',
+        type: 'report',
+        url: '/resources/pew-how-americans-view-the-border.pdf',
+        source: 'Pew Research Center',
+      },
     ],
     bibleVerses: [
       {
@@ -340,6 +346,12 @@ const topics: Topic[] = [
         url: 'https://www.commentary.org/articles/abe-greenwald/trust-crisis-in-america/',
         source: 'Abe Greenwald, Commentary Magazine',
       },
+      {
+        title: 'Americans\u2019 Dismal Views of the Nation\u2019s Politics',
+        type: 'report',
+        url: '/resources/pew-americans-dismal-view-of-politics.pdf',
+        source: 'Pew Research Center',
+      },
     ],
     bibleVerses: [
       {
@@ -401,6 +413,12 @@ const topics: Topic[] = [
         type: 'video',
         url: 'https://youtu.be/25dJDij-TFU?si=07N1Q4sprZofsoTm',
         source: 'Jonathan Haidt',
+      },
+      {
+        title: 'Social Media and Youth Mental Health',
+        type: 'report',
+        url: '/resources/surgeon-general-youth-mental-health.pdf',
+        source: 'U.S. Surgeon General',
       },
     ],
     bibleVerses: [
