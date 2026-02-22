@@ -13,7 +13,6 @@ interface Resource {
 interface BibleVerse {
   reference: string
   text: string
-  application: string
 }
 
 interface BibleVerseSection {
@@ -65,17 +64,14 @@ const topics: Topic[] = [
           {
             reference: 'Isaiah 41:10',
             text: 'So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.',
-            application: 'You are never abandoned even when you feel alone.',
           },
           {
             reference: 'Psalm 23:4',
             text: 'Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff, they comfort me.',
-            application: 'God\'s presence continues in dark seasons.',
           },
           {
             reference: 'Hebrews 13:5',
             text: 'Keep your lives free from the love of money and be content with what you have, because God has said, "Never will I leave you; never will I forsake you."',
-            application: 'Loneliness is real but not ultimate.',
           },
         ],
       },
@@ -85,12 +81,10 @@ const topics: Topic[] = [
           {
             reference: 'Psalm 68:6',
             text: 'God sets the lonely in families, he leads out the prisoners with singing; but the rebellious live in a sun-scorched land.',
-            application: 'Seek community God provides.',
           },
           {
             reference: 'Romans 8:15',
             text: 'The Spirit you received does not make you slaves, so that you live in fear again; rather, the Spirit you received brought about your adoption to sonship. And by him we cry, "Abba, Father."',
-            application: 'Your identity includes belonging.',
           },
         ],
       },
@@ -123,22 +117,18 @@ const topics: Topic[] = [
           {
             reference: 'John 8:36',
             text: 'If the Son sets you free, you will be free indeed.',
-            application: 'True freedom comes through Christ.',
           },
           {
             reference: 'Galatians 5:1',
             text: 'It is for freedom that Christ has set us free.',
-            application: 'Guard your freedom; do not return to slavery.',
           },
           {
             reference: 'Romans 6:12\u201314',
             text: 'Therefore, do not offer the parts of your body to sin, as instruments of wickedness, but rather offer yourselves to God, as those who have been brought from death to life; and offer the parts of your body to him as instruments of righteousness. For sin shall not be your master, because you are not under law, but under grace.',
-            application: 'Addiction is not your ruler under grace.',
           },
           {
             reference: '1 Corinthians 6:12\u201315',
             text: '\u2018Everything is permissible for me\u2019 \u2013 but not everything is beneficial. \u2018Everything is permissible for me\u2019 \u2013 but I will not be mastered by anything. \u2018Food for the stomach and the stomach for food\u2019 \u2013 but God will destroy them both. The body is not meant for sexual immorality, but for the Lord, and the Lord for the body. By his power God raised the Lord from the dead, and he will raise us also. Do you not know that your bodies are members of Christ himself? Shall I then take the members of Christ and unite them with a prostitute? Never!',
-            application: 'Refuse to be controlled by anything but Christ.',
           },
         ],
       },
@@ -148,22 +138,18 @@ const topics: Topic[] = [
           {
             reference: '1 Corinthians 10:13',
             text: 'No temptation has seized you except what is common to man. And God is faithful, he will not let you be tempted beyond what you can bear, but when you are tempted, he will also provide a way out so that you can stand up under it.',
-            application: 'There is always an escape path.',
           },
           {
             reference: 'James 4:7',
             text: 'Submit yourselves, then, to God. Resist the devil, and he will flee from you.',
-            application: 'Resistance weakens temptation.',
           },
           {
             reference: '1 Peter 5:8',
             text: 'Be self-controlled and alert. Your enemy the devil prowls around like a roaring lion looking for someone to devour.',
-            application: 'Stay vigilant against the power of darkness.',
           },
           {
             reference: '2 Timothy 1:7',
             text: 'For God did not give us a spirit of timidity but a spirit of power, of love and of self-discipline.',
-            application: 'The Spirit empowers self-control.',
           },
         ],
       },
@@ -173,22 +159,18 @@ const topics: Topic[] = [
           {
             reference: '1 Corinthians 6:18',
             text: 'Flee from sexual immorality. All other sins a man commits are outside his body, but he who sins sexually sins against his own body.',
-            application: 'Sometimes victory means leaving.',
           },
           {
             reference: 'Matthew 5:28',
             text: 'But I tell you that anyone who looks at a woman lustfully has already committed adultery with her in his heart.',
-            application: 'Guard your thoughts carefully.',
           },
           {
             reference: '1 Thessalonians 4:3\u20135',
             text: 'It is God\u2019s will that you should be sanctified; that you should avoid sexual immorality; that each of you should learn to control his own body in a way that is holy and honorable, not in passionate lust like the heathen, who do not know God.',
-            application: 'Discipline restores dignity and pleases God.',
           },
           {
             reference: '1 Peter 2:11',
             text: 'Dear friends, I urge you, as aliens and strangers in the world, to abstain from sinful desires, which war against your soul.',
-            application: 'Sinful desires wage harm against your very soul.',
           },
         ],
       },
@@ -198,22 +180,18 @@ const topics: Topic[] = [
           {
             reference: 'Galatians 5:16',
             text: 'So I say, live by the Spirit, and you will not gratify the desires of the sinful nature.',
-            application: 'Replace old habits with Spirit-led living.',
           },
           {
             reference: 'Romans 12:1\u20132',
             text: 'Therefore, I urge you, brothers, in view of God\u2019s mercy, to offer your bodies as living sacrifices, holy and pleasing to God \u2014 this is your spiritual act of worship. Do not conform any longer to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God\u2019s will is \u2014 his good, pleasing and perfect will.',
-            application: 'Recovery requires renewed thinking.',
           },
           {
             reference: 'Titus 2:11\u201312',
             text: 'For the grace of God that brings salvation has appeared to all men. It teaches us to say \u2018No\u2019 to ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in this present age\u2026',
-            application: 'Grace empowers you to resist.',
           },
           {
             reference: '1 Peter 4:1\u20132',
             text: 'Therefore, since Christ suffered in his body, arm yourselves also with the same attitude, because he who has suffered in his body is done with sin. As a result, he does not live the rest of his earthly life for evil human desires, but rather for the will of God.',
-            application: 'A new purpose weakens old cravings.',
           },
         ],
       },
@@ -223,12 +201,10 @@ const topics: Topic[] = [
           {
             reference: 'Romans 5:3\u20135',
             text: 'Not only so, but we also rejoice in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope. And hope does not disappoint us, because God has poured out his love into our hearts by the Holy Spirit, whom he has given us.',
-            application: 'Struggle can produce strength.',
           },
           {
             reference: '2 Peter 1:5\u20137',
             text: 'For this very reason, make every effort to add to your faith goodness; and to goodness, knowledge; and to knowledge, self-control; and to self-control, perseverance; and to perseverance, godliness; and to godliness, brotherly kindness; and to brotherly kindness, love.',
-            application: 'Recovery is daily growth.',
           },
         ],
       },
@@ -261,17 +237,14 @@ const topics: Topic[] = [
           {
             reference: 'Leviticus 19:33\u201334',
             text: 'When a foreigner resides among you in your land, do not mistreat them. The foreigner residing among you must be treated as your native-born. Love them as yourself, for you were foreigners in Egypt. I am the Lord your God.',
-            application: 'Treat outsiders as neighbors.',
           },
           {
             reference: 'Deuteronomy 10:19',
             text: 'And you are to love those who are foreigners, for you yourselves were foreigners in Egypt.',
-            application: 'Remember shared humanity.',
           },
           {
             reference: 'Exodus 22:21',
             text: 'Do not mistreat or oppress a foreigner, for you were foreigners in Egypt.',
-            application: 'Reject prejudice.',
           },
         ],
       },
@@ -281,17 +254,14 @@ const topics: Topic[] = [
           {
             reference: 'Hebrews 13:1\u20132',
             text: 'Keep on loving one another as brothers and sisters. Do not forget to show hospitality to strangers, for by so doing some people have shown hospitality to angels without knowing it.',
-            application: 'Open your life outward.',
           },
           {
             reference: 'Matthew 25:34\u201340',
             text: 'Then the King will say to those on his right, \u2018Come, you who are blessed by my Father; take your inheritance, the kingdom prepared for you since the creation of the world. For I was hungry and you gave me something to eat, I was thirsty and you gave me something to drink, I was a stranger and you invited me in, I needed clothes and you clothed me, I was sick and you looked after me, I was in prison and you came to visit me.\u2019 Then the righteous will answer him, \u2018Lord, when did we see you hungry and feed you, or thirsty and give you something to drink? When did we see you a stranger and invite you in, or needing clothes and clothe you? When did we see you sick or in prison and go to visit you?\u2019 The King will reply, \u2018Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me.\u2019',
-            application: 'The Lord cares about those who are hurting.',
           },
           {
             reference: 'Romans 12:13',
             text: 'Share with the Lord\u2019s people who are in need. Practice hospitality.',
-            application: 'Make welcome intentional.',
           },
         ],
       },
@@ -301,17 +271,14 @@ const topics: Topic[] = [
           {
             reference: 'Numbers 34:1\u201312',
             text: 'The Lord said to Moses, \u201cCommand the Israelites and say to them: \u2018When you enter Canaan, the land that will be allotted to you as an inheritance is to have these boundaries\u2026\u2019\u201d God then described in detail the southern, western, northern, and eastern boundaries of the land.',
-            application: 'God set clear boundaries for his people.',
           },
           {
             reference: 'Numbers 32:17',
             text: 'But we will arm ourselves for battle and go ahead of the Israelites until we have brought them to their place. Meanwhile our women and children will live in fortified cities, for protection from the inhabitants of the land.',
-            application: 'Walls were seen as protection from others.',
           },
           {
             reference: 'Nehemiah 2:17\u201318',
             text: 'Then I said to them, \u201cYou see the trouble we are in: Jerusalem lies in ruins, and its gates have been burned with fire. Come, let us rebuild the wall of Jerusalem, and we will no longer be in disgrace.\u201d I also told them about the gracious hand of my God on me and what the king had said to me. They replied, \u201cLet us start rebuilding.\u201d So they began this good work.',
-            application: 'God called his people to build a wall for protection.',
           },
         ],
       },
@@ -321,7 +288,6 @@ const topics: Topic[] = [
           {
             reference: 'Leviticus 24:22',
             text: 'You are to have the same law for the foreigner and the native-born. I am the Lord your God.',
-            application: 'One standard of law for all.',
           },
         ],
       },
@@ -360,12 +326,10 @@ const topics: Topic[] = [
           {
             reference: '1 Corinthians 1:10',
             text: 'I appeal to you, brothers and sisters, in the name of our Lord Jesus Christ, that all of you agree with one another in what you say and that there be no divisions among you, but that you be perfectly united in mind and thought.',
-            application: 'Seek agreement within your church where possible.',
           },
           {
             reference: 'Ephesians 4:1\u20136',
             text: 'As a prisoner for the Lord, then, I urge you to live a life worthy of the calling you have received. Be completely humble and gentle; be patient, bearing with one another in love. Make every effort to keep the unity of the Spirit through the bond of peace. There is one body and one Spirit, just as you were called to one hope when you were called; one Lord, one faith, one baptism; one God and Father of all, who is over all and through all and in all.',
-            application: 'Prioritize relationship.',
           },
         ],
       },
@@ -375,7 +339,6 @@ const topics: Topic[] = [
           {
             reference: 'Colossians 3:1\u201314',
             text: 'Since, then, you have been raised with Christ, set your hearts on things above, where Christ is, seated at the right hand of God. Set your minds on things above, not on earthly things. For you died, and your life is now hidden with Christ in God\u2026 But now you must also rid yourselves of all such things as these: anger, rage, malice, slander, and filthy language from your lips. Do not lie to each other, since you have taken off your old self with its practices and have put on the new self\u2026 Therefore, as God\u2019s chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness and patience. Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you. And over all these virtues put on love, which binds them all together in perfect unity.',
-            application: 'As Christians, show that we are different.',
           },
         ],
       },
@@ -385,17 +348,14 @@ const topics: Topic[] = [
           {
             reference: 'James 1:19\u201321',
             text: 'My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry, because human anger does not produce the righteousness that God desires. Therefore, get rid of all moral filth and the evil that is so prevalent and humbly accept the word planted in you, which can save you.',
-            application: 'Pause before reacting.',
           },
           {
             reference: 'Proverbs 15:1\u20134',
             text: 'A gentle answer turns away wrath, but a harsh word stirs up anger. The tongue of the wise adorns knowledge, but the mouth of the fool gushes folly. The eyes of the Lord are everywhere, keeping watch on the wicked and the good. The soothing tongue is a tree of life, but a perverse tongue crushes the spirit.',
-            application: 'Tone matters.',
           },
           {
             reference: 'Matthew 5:11\u201316',
             text: 'Blessed are you when people insult you, persecute you and falsely say all kinds of evil against you because of me. Rejoice and be glad, because great is your reward in heaven\u2026 You are the salt of the earth\u2026 You are the light of the world. A town built on a hill cannot be hidden. Neither do people light a lamp and put it under a bowl. Instead they put it on its stand, and it gives light to everyone in the house. In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven.',
-            application: 'Be salt and light and be an example for others.',
           },
         ],
       },
@@ -428,22 +388,18 @@ const topics: Topic[] = [
           {
             reference: 'Philippians 4:6\u20137',
             text: 'Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.',
-            application: 'Pray instead of spiraling.',
           },
           {
             reference: '1 Peter 5:7',
             text: 'Cast all your anxiety on him because he cares for you.',
-            application: 'Release burdens regularly.',
           },
           {
             reference: 'Matthew 6:30\u201334',
             text: 'If that is how God clothes the grass of the field, which is here today and tomorrow is thrown into the fire, will he not much more clothe you\u2014you of little faith? So do not worry, saying, \u2018What shall we eat?\u2019 or \u2018What shall we drink?\u2019 or \u2018What shall we wear?\u2019 For the pagans run after all these things, and your heavenly Father knows that you need them. But seek first his kingdom and his righteousness, and all these things will be given to you as well. Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.',
-            application: 'Focus on today only.',
           },
           {
             reference: 'Isaiah 26:2\u20134',
             text: 'Open the gates that the righteous nation may enter, the nation that keeps faith. You will keep in perfect peace those whose minds are steadfast, because they trust in you. Trust in the Lord forever, for the Lord, the Lord himself, is the Rock eternal.',
-            application: 'Fix your mind on God.',
           },
         ],
       },
@@ -453,17 +409,14 @@ const topics: Topic[] = [
           {
             reference: 'Psalm 139:13\u201316',
             text: 'For you created my inmost being; you knit me together in my mother\u2019s womb. I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well. My frame was not hidden from you when I was made in the secret place, when I was woven together in the depths of the earth. Your eyes saw my unformed body; all the days ordained for me were written in your book before one of them came to be.',
-            application: 'Your worth is intrinsic.',
           },
           {
             reference: 'Ephesians 2:1\u201310',
             text: 'As for you, you were dead in your transgressions and sins\u2026 But because of his great love for us, God, who is rich in mercy, made us alive with Christ even when we were dead in transgressions\u2014it is by grace you have been saved\u2026 For it is by grace you have been saved, through faith\u2014and this is not from yourselves, it is the gift of God\u2014not by works, so that no one can boast. For we are God\u2019s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.',
-            application: 'You have purpose.',
           },
           {
             reference: 'Romans 8:14\u201315',
             text: 'For those who are led by the Spirit of God are the children of God. The Spirit you received does not make you slaves, so that you live in fear again; rather, the Spirit you received brought about your adoption to sonship.',
-            application: 'You belong already.',
           },
         ],
       },
@@ -473,12 +426,10 @@ const topics: Topic[] = [
           {
             reference: 'Lamentations 3:19\u201326',
             text: 'I remember my affliction and my wandering, the bitterness and the gall. I well remember them, and my soul is downcast within me. Yet this I call to mind and therefore I have hope: Because of the Lord\u2019s great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness. I say to myself, \u201cThe Lord is my portion; therefore I will wait for him.\u201d The Lord is good to those whose hope is in him, to the one who seeks him; it is good to wait quietly for the salvation of the Lord.',
-            application: 'Each day resets hope.',
           },
           {
             reference: 'Jeremiah 29:11\u201314',
             text: 'For I know the plans I have for you,\u201d declares the Lord, \u201cplans to prosper you and not to harm you, plans to give you hope and a future. Then you will call on me and come and pray to me, and I will listen to you. You will seek me and find me when you seek me with all your heart. I will be found by you,\u201d declares the Lord.',
-            application: 'Your story continues.',
           },
         ],
       },
@@ -498,22 +449,18 @@ const topics: Topic[] = [
           {
             reference: '1 Peter 2:1\u20133',
             text: 'Therefore, rid yourselves of all malice and all deceit, hypocrisy, envy, and slander of every kind. Like newborn babies, crave pure spiritual milk, so that by it you may grow up in your salvation, now that you have tasted that the Lord is good.',
-            application: 'Get rid of evil influences.',
           },
           {
             reference: 'John 8:31\u201332',
             text: 'To the Jews who had believed him, Jesus said, \u201cIf you hold to my teaching, you are really my disciples. Then you will know the truth, and the truth will set you free.\u201d',
-            application: 'Freedom comes from aligning life with truth.',
           },
           {
             reference: 'John 8:42\u201347',
             text: 'Jesus said to them, \u201cIf God were your Father, you would love me, for I have come here from God\u2026 You belong to your father, the devil, and you want to carry out your father\u2019s desires. He was a murderer from the beginning, not holding to the truth, for there is no truth in him. When he lies, he speaks his native language, for he is a liar and the father of lies.\u201d',
-            application: 'Satan is the father of lies.',
           },
           {
             reference: 'Psalm 119:159\u2013163',
             text: 'See how I love your precepts; preserve my life, Lord, in accordance with your love. All your words are true; all your righteous laws are eternal. Rulers persecute me without cause, but my heart trembles at your word. I rejoice in your promise like one who finds great spoil. I hate and detest falsehood but I love your law.',
-            application: 'Scripture is the standard.',
           },
         ],
       },
@@ -523,22 +470,18 @@ const topics: Topic[] = [
           {
             reference: '1 Thessalonians 5:19\u201322',
             text: 'Do not quench the Spirit. Do not treat prophecies with contempt but test them all; hold on to what is good, reject every kind of evil.',
-            application: 'Verify before believing.',
           },
           {
             reference: 'Proverbs 12:22',
             text: 'Lying lips are an abomination to the Lord, but those who act faithfully are his delight.',
-            application: 'God loves truth.',
           },
           {
             reference: '2 Corinthians 11:13\u201315',
             text: 'For such people are false apostles, deceitful workers, masquerading as apostles of Christ. And no wonder, for Satan himself masquerades as an angel of light. It is not surprising, then, if his servants also masquerade as servants of righteousness. Their end will be what their actions deserve.',
-            application: 'There are those who seek to deceive.',
           },
           {
             reference: 'Colossians 3:7\u201312',
             text: 'You used to walk in these ways, in the life you once lived. But now you must also rid yourselves of all such things as these: anger, rage, malice, slander, and filthy language from your lips. Do not lie to each other, since you have taken off your old self with its practices and have put on the new self, which is being renewed in knowledge in the image of its Creator\u2026 Therefore, as God\u2019s chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness and patience.',
-            application: 'Live like Jesus.',
           },
         ],
       },
@@ -753,9 +696,6 @@ export default function Topics() {
                                 </p>
                                 <p className="text-warm-800 leading-relaxed italic mb-2">
                                   {verse.text}
-                                </p>
-                                <p className="text-sm text-warm-600 font-medium">
-                                  {verse.application}
                                 </p>
                               </div>
                             ))}
