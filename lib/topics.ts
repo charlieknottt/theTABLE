@@ -23,7 +23,7 @@ export async function getTopics(): Promise<Topic[]> {
   })
 
   if (blobs.length > 0) {
-    const res = await fetch(blobs[0].downloadUrl)
+    const res = await fetch(blobs[0].downloadUrl, { cache: 'no-store' })
     return await res.json()
   }
 
