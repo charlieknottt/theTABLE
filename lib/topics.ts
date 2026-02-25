@@ -16,25 +16,21 @@ export async function getTopics(): Promise<Topic[]> {
     return getLocalTopics()
   }
 
-  try {
-    const { blobs } = await list({
-      prefix: BLOB_KEY,
-      limit: 1,
-      token: process.env.BLOB_READ_WRITE_TOKEN,
-    })
+  const { blobs } = await list({
+    prefix: BLOB_KEY,
+    limit: 1,
+    token: process.env.BLOB_READ_WRITE_TOKEN,
+  })
 
-    if (blobs.length === 0) {
-      // Blob doesn't exist yet — seed from local file
-      const topics = getLocalTopics()
-      await saveTopics(topics)
-      return topics
-    }
-
+  if (blobs.length > 0) {
     const res = await fetch(blobs[0].downloadUrl)
     return await res.json()
-  } catch {
-    return getLocalTopics()
   }
+
+  // Blob doesn't exist yet — seed from local file
+  const topics = getLocalTopics()
+  await saveTopics(topics)
+  return topics
 }
 
 export async function saveTopics(topics: Topic[]): Promise<void> {
