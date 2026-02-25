@@ -12,7 +12,7 @@ export async function PUT(
 
   const { id } = await params
   const body = await request.json()
-  const topics = getTopics()
+  const topics = await getTopics()
   const index = topics.findIndex(t => t.id === id)
 
   if (index === -1) {
@@ -33,7 +33,7 @@ export async function PUT(
     paragraphs: Array.isArray(paragraphs) ? paragraphs : paragraphs.split('\n').filter((p: string) => p.trim()),
   }
 
-  saveTopics(topics)
+  await saveTopics(topics)
   return NextResponse.json(topics[index])
 }
 
@@ -46,7 +46,7 @@ export async function DELETE(
   }
 
   const { id } = await params
-  const topics = getTopics()
+  const topics = await getTopics()
   const index = topics.findIndex(t => t.id === id)
 
   if (index === -1) {
@@ -54,6 +54,6 @@ export async function DELETE(
   }
 
   delete topics[index].story
-  saveTopics(topics)
+  await saveTopics(topics)
   return NextResponse.json(topics[index])
 }

@@ -11,7 +11,7 @@ export async function GET(
   }
 
   const { id } = await params
-  const topics = getTopics()
+  const topics = await getTopics()
   const topic = topics.find(t => t.id === id)
 
   if (!topic) {
@@ -31,7 +31,7 @@ export async function PUT(
 
   const { id } = await params
   const body = await request.json()
-  const topics = getTopics()
+  const topics = await getTopics()
   const index = topics.findIndex(t => t.id === id)
 
   if (index === -1) {
@@ -44,6 +44,6 @@ export async function PUT(
   if (background !== undefined) topics[index].background = background
   if (whyNow !== undefined) topics[index].whyNow = whyNow
 
-  saveTopics(topics)
+  await saveTopics(topics)
   return NextResponse.json(topics[index])
 }

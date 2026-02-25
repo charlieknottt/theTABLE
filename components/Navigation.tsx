@@ -17,9 +17,9 @@ export default function Navigation() {
   return (
     <nav className="bg-white border-b border-warm-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-12">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-serif font-bold text-primary-600">
+            <span className="text-xl font-serif font-bold text-primary-600">
               THE TABLE
             </span>
           </Link>

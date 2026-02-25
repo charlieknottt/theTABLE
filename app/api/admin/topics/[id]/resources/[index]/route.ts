@@ -13,7 +13,7 @@ export async function PUT(
   const { id, index: indexStr } = await params
   const resourceIndex = parseInt(indexStr, 10)
   const body = await request.json()
-  const topics = getTopics()
+  const topics = await getTopics()
   const topicIndex = topics.findIndex(t => t.id === id)
 
   if (topicIndex === -1) {
@@ -30,7 +30,7 @@ export async function PUT(
   if (url !== undefined) topics[topicIndex].resources[resourceIndex].url = url
   if (source !== undefined) topics[topicIndex].resources[resourceIndex].source = source
 
-  saveTopics(topics)
+  await saveTopics(topics)
   return NextResponse.json(topics[topicIndex])
 }
 
@@ -44,7 +44,7 @@ export async function DELETE(
 
   const { id, index: indexStr } = await params
   const resourceIndex = parseInt(indexStr, 10)
-  const topics = getTopics()
+  const topics = await getTopics()
   const topicIndex = topics.findIndex(t => t.id === id)
 
   if (topicIndex === -1) {
@@ -56,6 +56,6 @@ export async function DELETE(
   }
 
   topics[topicIndex].resources.splice(resourceIndex, 1)
-  saveTopics(topics)
+  await saveTopics(topics)
   return NextResponse.json(topics[topicIndex])
 }

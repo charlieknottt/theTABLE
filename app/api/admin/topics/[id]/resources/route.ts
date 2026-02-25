@@ -12,7 +12,7 @@ export async function POST(
 
   const { id } = await params
   const body = await request.json()
-  const topics = getTopics()
+  const topics = await getTopics()
   const index = topics.findIndex(t => t.id === id)
 
   if (index === -1) {
@@ -25,6 +25,6 @@ export async function POST(
   }
 
   topics[index].resources.push({ title, type, url, source })
-  saveTopics(topics)
+  await saveTopics(topics)
   return NextResponse.json(topics[index])
 }
