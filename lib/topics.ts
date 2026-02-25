@@ -43,6 +43,7 @@ export async function saveTopics(topics: Topic[]): Promise<void> {
     access: 'public',
     contentType: 'application/json',
     addRandomSuffix: false,
+    allowOverwrite: true,
     token: process.env.BLOB_READ_WRITE_TOKEN,
   })
 }
