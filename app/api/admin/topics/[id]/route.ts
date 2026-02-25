@@ -25,29 +25,25 @@ export async function PUT(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
-  try {
-    if (!(await isAuthenticated())) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-    }
-
-    const { id } = await params
-    const body = await request.json()
-    const topics = await getTopics()
-    const index = topics.findIndex(t => t.id === id)
-
-    if (index === -1) {
-      return NextResponse.json({ error: 'Topic not found' }, { status: 404 })
-    }
-
-    const { title, subtitle, background, whyNow } = body
-    if (title !== undefined) topics[index].title = title
-    if (subtitle !== undefined) topics[index].subtitle = subtitle
-    if (background !== undefined) topics[index].background = background
-    if (whyNow !== undefined) topics[index].whyNow = whyNow
-
-    await saveTopics(topics)
-    return NextResponse.json(topics[index])
-  } catch (err) {
-    return NextResponse.json({ error: String(err) }, { status: 500 })
+  if (!(await isAuthenticated())) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
+
+  const { id } = await params
+  const body = await request.json()
+  const topics = await getTopics()
+  const index = topics.findIndex(t => t.id === id)
+
+  if (index === -1) {
+    return NextResponse.json({ error: 'Topic not found' }, { status: 404 })
+  }
+
+  const { title, subtitle, background, whyNow } = body
+  if (title !== undefined) topics[index].title = title
+  if (subtitle !== undefined) topics[index].subtitle = subtitle
+  if (background !== undefined) topics[index].background = background
+  if (whyNow !== undefined) topics[index].whyNow = whyNow
+
+  await saveTopics(topics)
+  return NextResponse.json(topics[index])
 }
