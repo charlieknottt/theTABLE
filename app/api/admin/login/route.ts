@@ -19,5 +19,13 @@ export async function POST(request: NextRequest) {
     maxAge: 60 * 60 * 24, // 24 hours
   })
 
+  response.cookies.set('admin_logged_in', '1', {
+    httpOnly: false,
+    sameSite: 'strict',
+    secure: process.env.NODE_ENV === 'production',
+    path: '/',
+    maxAge: 60 * 60 * 24,
+  })
+
   return response
 }

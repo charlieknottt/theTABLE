@@ -10,5 +10,12 @@ export async function POST() {
     maxAge: 0,
   })
 
+  response.cookies.set('admin_logged_in', '', {
+    httpOnly: false,
+    sameSite: 'strict',
+    path: '/',
+    maxAge: 0,
+  })
+
   return response
 }

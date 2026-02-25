@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { put, head } from '@vercel/blob'
+import { put, list } from '@vercel/blob'
 import type { Topic } from '@/types/topic'
 
 const DATA_PATH = path.join(process.cwd(), 'data', 'topics.json')
@@ -17,14 +17,23 @@ export async function getTopics(): Promise<Topic[]> {
   }
 
   try {
-    const meta = await head(BLOB_KEY, { token: process.env.BLOB_READ_WRITE_TOKEN })
-    const res = await fetch(meta.downloadUrl)
+    const { blobs } = await list({
+      prefix: BLOB_KEY,
+      limit: 1,
+      token: process.env.BLOB_READ_WRITE_TOKEN,
+    })
+
+    if (blobs.length === 0) {
+      // Blob doesn't exist yet — seed from local file
+      const topics = getLocalTopics()
+      await saveTopics(topics)
+      return topics
+    }
+
+    const res = await fetch(blobs[0].downloadUrl)
     return await res.json()
   } catch {
-    // Blob doesn't exist yet — seed from local file
-    const topics = getLocalTopics()
-    await saveTopics(topics)
-    return topics
+    return getLocalTopics()
   }
 }
 

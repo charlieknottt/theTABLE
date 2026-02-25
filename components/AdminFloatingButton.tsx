@@ -7,7 +7,7 @@ export default function AdminFloatingButton() {
   const [isAdmin, setIsAdmin] = useState(false)
 
   useEffect(() => {
-    setIsAdmin(document.cookie.includes('admin_session='))
+    setIsAdmin(document.cookie.includes('admin_logged_in=1'))
   }, [])
 
   if (!isAdmin) return null
